@@ -36,6 +36,11 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+.fact-url {
+  background: none;
+  color: violet;
+  font-family: 'Montserrat', sans-serif;
+}
 
 @media screen and (max-width: 900px) {
   section {

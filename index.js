@@ -17,8 +17,12 @@ var phrase = document.querySelector('.message');
 
 // happy.addEventListener('click', happyThing);
 // silly.addEventListener('click', sillyThing);
-// sad.addEventListener('click', sadThing);
-
+silly.addEventListener('click', function() {
+  sayThings(phrases.silly);
+});
+sad.addEventListener('click', function() {
+  sayThings(phrases.sad);
+});
 wormy.addEventListener('click', function() {
   sayThings(phrases.wormy);
 });
