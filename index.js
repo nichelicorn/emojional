@@ -49,40 +49,10 @@ function sayThings(array) {
   phrase.innerText = array[index];
 }
 
-function happyThing() {
-  var index = generateRandom(phrases.happy);
-  phrase.innerText = phrases.happy[index];
-}
-
-function sillyThing() {
-  var index = generateRandom(phrases.silly);
-  phrase.innerText = phrases.silly[index];
-}
-
-function sadThing() {
-  var index = generateRandom(phrases.sad);
-  phrase.innerText = phrases.sad[index];
-}
-
-function wormyThing() {
-  var index = generateRandom(phrases.wormy);
-  phrase.innerText = phrases.wormy[index];
-}
-
-function mindblownThing() {
-  var index = generateRandom(phrases.mindblown);
-  phrase.innerText = phrases.mindblown[index];
-}
-
-function studiousThing() {
-  var index = generateRandom(phrases.studious)
-  phrase.innerText = phrases.studious[index];
-}
-
+// NEXT STEPS ⤵
+// Update README
 // Iteration 2: Level Up
 // As a user, it may be a little confusing if you get the same response twice in a row (you may wonder, did that "work"?). Write your code in a way that doesn't allow a user to get a "random" answer two times a row. You may have noticed that the "example" site linked above does not have this functionality.
-//
 // Possible Responses
 // Possible reponses for each emoji are stored in an object in your JavaScript file. Feel free to change or add to this list if you'd like!
-
 // fact source: https://navajocodetalkers.org/38-earthworm-facts-for-kids/
