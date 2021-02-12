@@ -1,3 +1,4 @@
+// DATA ⤵
 var phrases = {
   happy: ["You go!", "Your smile just cheered me up!", "YAY!"],
   silly: ["Interesting response", "Sounds ... good?", "Me too."],
@@ -7,6 +8,7 @@ var phrases = {
   studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
 }
 
+// QUERY SELECTORS ⤵
 var happy = document.querySelector('.happy');
 var silly = document.querySelector('.silly');
 var sad = document.querySelector('.crying');
@@ -15,8 +17,10 @@ var mindblown = document.querySelector('.mindblown');
 var studious = document.querySelector('.studious');
 var phrase = document.querySelector('.message');
 
-// happy.addEventListener('click', happyThing);
-// silly.addEventListener('click', sillyThing);
+// EVENT LISTENERS ⤵
+happy.addEventListener('click', function() {
+  sayThings(phrases.happy);
+});
 silly.addEventListener('click', function() {
   sayThings(phrases.silly);
 });
@@ -33,14 +37,7 @@ studious.addEventListener('click', function() {
   sayThings(phrases.studious);
 });
 
-// WHAT STEPS SHOULD BE TAKEN TO REFACTOR THIS INTO ONE FUNCTION?
-// use an anonymous function on the button click to generateRandom and pass through the array
-// refactor generateRandom to include calling of arrayThing
-
-// function generateRandom(array) {
-//   return Math.floor(Math.random() * array.length);
-// }
-
+// FUNCTIONS ⤵
 function generateRandom(array) {
   var index = Math.floor(Math.random() * array.length);
   return index;
@@ -78,15 +75,10 @@ function mindblownThing() {
 }
 
 function studiousThing() {
-  // console.log(phrases.studious);
   var index = generateRandom(phrases.studious)
   phrase.innerText = phrases.studious[index];
 }
 
-
-// Iteration 1: All the Feels
-// Implement the same functionality you did on one button, but on all three buttons now.
-//
 // Iteration 2: Level Up
 // As a user, it may be a little confusing if you get the same response twice in a row (you may wonder, did that "work"?). Write your code in a way that doesn't allow a user to get a "random" answer two times a row. You may have noticed that the "example" site linked above does not have this functionality.
 //
