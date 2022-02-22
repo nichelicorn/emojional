@@ -95,24 +95,24 @@ var phrases = {
   // mindblown: ["Have you taken a pom?", "Do you need a friend in study hall?", "Thank goodness we have Monday off!"],
   mindblown: [
     {
-      quote: "",
-      author: ""
+      quote: "If you let people into your life a little bit, they can be pretty damn amazing.",
+      author: "Sherman Alexie, The Absolutely True Diary of a Part-Time Indian"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Anything that’s human is mentionable, and anything that is mentionable can be more manageable. When we can talk about our feelings, they become less overwhelming, less upsetting, and less scary. The people we trust with that important talk can help us know that we are not alone.",
+      author: "Fred Rogers"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Learning never exhausts the mind.",
+      author: "Leonardo da Vinci"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.",
+      author: "Marilyn Monroe"
     },
     {
-      quote: "",
-      author: ""
+      quote: "There is no greater agony than bearing an untold story inside you.",
+      author: "Maya Angelou, I Know Why the Caged Bird Sings"
     },
   ],
   // studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
