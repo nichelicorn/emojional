@@ -49,24 +49,24 @@ var phrases = {
   // crying: ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"],
   crying: [
     {
-      quote: "",
-      author: ""
+      quote: "They say when you are missing someone that they are probably feeling the same, but I don't think it's possible for you to miss me as much as I'm missing you right now.",
+      author: "Edna St. Vincent Millay"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Tears are words that need to be written.",
+      author: "Paulo Coelho"
     },
     {
-      quote: "",
-      author: ""
+      quote: "What a sad era when it is easier to smash an atom than a prejudice.",
+      author: "Albert Einstein"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Melancholy were the sounds on a winter's night.",
+      author: "Virginia Woolf, Jacob's Room"
     },
     {
-      quote: "",
-      author: ""
+      quote: "There's good in all of us and I think I simply love people too much, so much that it makes me feel too fucking sad.",
+      author: "Kurt Cobain"
     },
   ],
   // wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
