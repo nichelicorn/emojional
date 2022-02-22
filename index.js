@@ -1,6 +1,28 @@
 // DATA ⤵
 var phrases = {
-  happy: ["You go!", "Your smile just cheered me up!", "YAY!"],
+  // happy: ["You go!", "Your smile just cheered me up!", "YAY!"],
+  happy: [
+    {
+      quote: "My God, a moment of bliss. Why, isn't that enough for a whole lifetime?",
+      author: "Fyodor Dostoevsky"
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    }
+  ],
   silly: ["Interesting response", "Sounds ... good?", "Me too."],
   sad: ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"],
   wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
@@ -17,25 +39,38 @@ var mindblown = document.querySelector('.mindblown');
 var studious = document.querySelector('.studious');
 var phrase = document.querySelector('.message');
 
+// using a node list 
+const emojis = document.querySelectorAll(".emoji");
+
+emojis.forEach(emoji => {
+  emoji.addEventListener("click", returnPhrase);
+})
+
 // EVENT LISTENERS ⤵
-happy.addEventListener('click', function() {
-  sayThings(phrases.happy);
-});
-silly.addEventListener('click', function() {
-  sayThings(phrases.silly);
-});
-sad.addEventListener('click', function() {
-  sayThings(phrases.sad);
-});
-wormy.addEventListener('click', function() {
-  sayThings(phrases.wormy);
-});
-mindblown.addEventListener('click', function() {
-  sayThings(phrases.mindblown);
-});
-studious.addEventListener('click', function() {
-  sayThings(phrases.studious);
-});
+// happy.addEventListener('click', function() {
+//   sayThings(phrases.happy);
+// });
+// silly.addEventListener('click', function() {
+//   sayThings(phrases.silly);
+// });
+// sad.addEventListener('click', function() {
+//   sayThings(phrases.sad);
+// });
+// wormy.addEventListener('click', function() {
+//   sayThings(phrases.wormy);
+// });
+// mindblown.addEventListener('click', function() {
+//   sayThings(phrases.mindblown);
+// });
+// studious.addEventListener('click', function() {
+//   sayThings(phrases.studious);
+// });
+
+happy.addEventListener("click", returnPhrase);
+
+
+
+
 
 // FUNCTIONS ⤵
 function generateRandom(array) {
@@ -49,10 +84,11 @@ function sayThings(array) {
   phrase.innerText = array[index];
 }
 
-// NEXT STEPS ⤵
-// Update README
-// Iteration 2: Level Up
-// As a user, it may be a little confusing if you get the same response twice in a row (you may wonder, did that "work"?). Write your code in a way that doesn't allow a user to get a "random" answer two times a row. You may have noticed that the "example" site linked above does not have this functionality.
-// Possible Responses
-// Possible reponses for each emoji are stored in an object in your JavaScript file. Feel free to change or add to this list if you'd like!
-// fact source: https://navajocodetalkers.org/38-earthworm-facts-for-kids/
+function returnPhrase(event) {
+  // console.log("event target >", event.target);
+  // console.log("event target.classList >", event.target.classList);
+  const emojion = event.target.classList[1];
+
+  console.log("emojion >", emojion, typeof emojion); // logs a string based on the class of the targeted emoji
+
+}
