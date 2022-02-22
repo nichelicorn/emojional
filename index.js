@@ -72,24 +72,24 @@ var phrases = {
   // wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
   wormy: [
     {
-      quote: "",
-      author: ""
+      quote: "Well, I must endure the presence of a few caterpillars if I wish to become acquainted with the butterflies.",
+      author: "Antoine de Saint-Exupéry, The Little Prince"
     },
     {
-      quote: "",
-      author: ""
+      quote: "The caterpillar does all the work, but the butterfly gets all the publicity.",
+      author: "George Carlin"
     },
     {
-      quote: "",
-      author: ""
+      quote: "I will defend the absolute value of Mozart over Miley Cyrus, of course I will, but we should be wary of false dichotomies. You do not have to choose between one or the other. You can have both. The human cultural jungle should be as varied and plural as the Amazonian rainforest. We are all richer for biodiversity. We may decide that a puma is worth more to us than a caterpillar, but surely we can agree that the habitat is all the better for being able to sustain each.",
+      author: "Stephen Fry, The Fry Chronicles"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Nobody really metamorphoses. Cinderella is always Cinderella, just in a nicer dress. The Ugly Duckling was always a swan, just a smaller version. And I bet the tadpole and the caterpillar still feel the same, even when they're jumping and flying, swimming and floating. Just like I am now.",
+      author: "Holly Smale, Geek Girl "
     },
     {
-      quote: "",
-      author: ""
+      quote: "Keep your temper, said the Caterpillar.",
+      author: "Lewis Carroll, Alice in Wonderland"
     },
   ],
   // mindblown: ["Have you taken a pom?", "Do you need a friend in study hall?", "Thank goodness we have Monday off!"],
