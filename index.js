@@ -118,24 +118,24 @@ var phrases = {
   // studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
   studious: [
     {
-      quote: "",
-      author: ""
+      quote: "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.",
+      author: "Richard Feynmann"
     },
     {
-      quote: "",
-      author: ""
+      quote: "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+      author: "Albert Camus"
     },
     {
-      quote: "",
-      author: ""
+      quote: "I wanted a perfect ending. Now I've learned, the hard way, that some poems don't rhyme, and some stories don't have a clear beginning, middle, and end. Life is about not knowing, having to change, taking the moment and making the best of it, without knowing what's going to happen next. Delicious Ambiguity.",
+      author: "Gilda Radner"
     },
     {
-      quote: "",
-      author: ""
+      quote: "Once you learn to read, you will be forever free.",
+      author: "Frederick Douglass"
     },
     {
-      quote: "",
-      author: ""
+      quote: "No one is born hating another person because of the color of his skin, or his background, or his religion. People must learn to hate, and if they can learn to hate, they can be taught to love, for love comes more naturally to the human heart than its opposite.",
+      author: "Nelson Mandela, Long Walk to Freedom"
     },
   ],
 }
