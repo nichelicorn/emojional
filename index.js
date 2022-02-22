@@ -23,11 +23,121 @@ var phrases = {
       author: "Ursula K LeGuin"
     }
   ],
-  silly: ["Interesting response", "Sounds ... good?", "Me too."],
-  crying: ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"],
-  wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
-  mindblown: ["Have you taken a pom?", "Do you need a friend in study hall?", "Thank goodness we have Monday off!"],
-  studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
+  // silly: ["Interesting response", "Sounds ... good?", "Me too."],
+  silly: [
+    {
+      quote: "You will do foolish things, but do them with enthusiasm.",
+      author: "Colette"
+    },
+    {
+      quote: "When pain brings you down, don't be silly, don't close your eyes and cry, you just might be in the best position to see the sun shine.",
+      author: "Alanis Morissette"
+    },
+    {
+      quote: "Ever wonder about those people who spend $2 apiece on those little bottles of Evian water? Try spelling Evian backward.",
+      author: "George Carlin"
+    },
+    {
+      quote: "It's silly not to hope. It's a sin he thought.",
+      author: "Ernest Hemingway, The Old Man and the Sea"
+    },
+    {
+      quote: "When I like people immensely I never tell their names to anyone. It is like surrendering a part of them. I have grown to love secrecy. It seems to be the one thing that can make modern life mysterious or marvelous to us. The commonest thing is delightful if one only hides it. When I leave town now I never tell my people where I am going. If I did, I would lose all my pleasure. It is a silly habit, I daresay, but somehow it seems to bring a great deal of romance into one's life.",
+      author: "Oscar Wilde, The Picture of Dorian Gray"
+    },
+  ],
+  // crying: ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"],
+  crying: [
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+  ],
+  // wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
+  wormy: [
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+  ],
+  // mindblown: ["Have you taken a pom?", "Do you need a friend in study hall?", "Thank goodness we have Monday off!"],
+  mindblown: [
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+  ],
+  // studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
+  studious: [
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+    {
+      quote: "",
+      author: ""
+    },
+  ],
 }
 
 // 🔎 Query selectors
