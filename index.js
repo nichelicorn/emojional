@@ -157,12 +157,23 @@ function displayPhrase(event) {
   const emojion = event.target.classList[1];
   const randomIndex = generateRandom(phrases[emojion]);
 
-  const phrase = phrases[emojion][randomIndex];
+  let phrase = phrases[emojion][randomIndex];
   const newMessage = `${emojion}${randomIndex}`;
   
-  if (!phrase || lastMessage === newMessage) {
-    message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
-    author.textContent = "";
+  // if (!phrase || lastMessage === newMessage) {
+    if (lastMessage === newMessage) {
+    console.log("phrase 1 >", phrase);
+    phrase = phrases[emojion][randomIndex - 1];
+    console.log("phrase  2>", phrase);
+    if (!phrase) {
+      console.log("!phrase >", !phrase);
+      message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
+      author.textContent = "";
+    }
+    message.textContent = phrase.quote;
+    author.textContent = `- ${phrase.author}`;
+  } else if (!phrase) {
+    console.log("!phrase > ", !phrase);
   } else {
     message.textContent = phrase.quote;
     author.textContent = `- ${phrase.author}`;
