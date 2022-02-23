@@ -146,47 +146,20 @@ emojis.forEach(emoji => {
 
 // FUNCTIONS ⤵
 function generateRandom(array) {
-  // console.log("array >", array, typeof array); // array is coming through as a string!
-  // console.log("array.length >", array.length);
   var index = Math.floor(Math.random() * array.length);
   return index;
-}
-
-function sayThings(array) {
-  var index = generateRandom(array);
-  console.log(index);
-  phrase.innerText = array[index];
-}
+};
 
 function displayPhrase(event) {
   event.preventDefault();
-  // console.log("event target >", event.target);
-  // console.log("event target.classList >", event.target.classList);
   const emojion = event.target.classList[1];
-  // console.log("emojion >", emojion, typeof emojion); // logs a string based on the class of the targeted emoji
-
-  console.log("phrases[emojion] >", phrases[emojion]);
-
   const randomIndex = generateRandom(phrases[emojion]);
 
-  console.log("randomIndex >", randomIndex);
-
-  // when the phrase is a string in an array
-  // const phrase = phrases[emojion][randomIndex];
-
-  // when the phrase is an object
   const phrase = phrases[emojion][randomIndex];
 
-  // console.log("phrase array >", phrases[emojion]);
-  // console.log("phrase >", phrase);
-  console.log("phrase.quote >", phrase.quote);
-
   if (!phrase) {
-    console.log("error with the phrase")
-    message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside."
+    message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
   } else {
-    // message.textContent = phrase;
     message.textContent = phrase.quote;
-  }
-
-}
+  };
+};
