@@ -160,20 +160,6 @@ function displayPhrase(event) {
   const phrase = phrases[emojion][randomIndex];
   const newMessage = `${emojion}${randomIndex}`;
   
-  console.log("last message >", lastMessage);
-  console.log("new message >", newMessage);
-
-  // if (!phrase) {
-  //   message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
-  // } else if (lastMessage === newMessage) {
-  //   // console.log("you got a duplicate message");
-  //   message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
-  //   author.textContent = "";
-  // } else {
-  //   message.textContent = phrase.quote;
-  //   author.textContent = `- ${phrase.author}`;
-  // };
-
   if (!phrase || lastMessage === newMessage) {
     message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
     author.textContent = "";
