@@ -135,6 +135,7 @@ const phrases = {
 };
 
 // 🔎 Query selectors
+const author = document.querySelector(".author");
 const emojis = document.querySelectorAll(".emoji");
 const message = document.querySelector(".message");
 
@@ -160,5 +161,6 @@ function displayPhrase(event) {
     message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
   } else {
     message.textContent = phrase.quote;
+    author.textContent = `- ${phrase.author}`;
   };
 };
