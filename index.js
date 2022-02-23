@@ -160,39 +160,27 @@ function displayPhrase(event) {
   const phrase = phrases[emojion][randomIndex];
   const newMessage = `${emojion}${randomIndex}`;
   
-  // if the last message clicked is the same as the selected message
-  // display the alternate message
-  // else set the last message to the newMessage and display the new message
   console.log("last message >", lastMessage);
   console.log("new message >", newMessage);
 
-
-  // lastMessage = newMessage;
-  // if (!lastMessage) {
-  //   lastMessage = newMessage;
-  // } else if (newMessage === lastMessage) {
-  // console.log("you got a duplicate message");
-  // } else {
-  //   lastMessage = newMessage;
-  // }
-
   // if (!phrase) {
   //   message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
+  // } else if (lastMessage === newMessage) {
+  //   // console.log("you got a duplicate message");
+  //   message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
+  //   author.textContent = "";
   // } else {
   //   message.textContent = phrase.quote;
   //   author.textContent = `- ${phrase.author}`;
   // };
 
-  if (!phrase) {
-    message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
-  } else if (lastMessage === newMessage) {
-    console.log("you got a duplicate message");
-    message.textContent = "Today is a lovely day for a walk. Take 15 minutes for yourself outside.";
+  if (!phrase || lastMessage === newMessage) {
+    message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
     author.textContent = "";
   } else {
     message.textContent = phrase.quote;
     author.textContent = `- ${phrase.author}`;
-  }
+  };
 
   lastMessage = newMessage;
 };
