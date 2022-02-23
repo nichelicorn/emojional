@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(to right, #051937, #00466d, #007999, #00aeb1, #33e3b6);
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
 }
 
@@ -14,12 +15,13 @@ section {
   width: 50%;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
+.prompt {
+  background-color: powderblue;
 }
 
-.prompt {
-  font-family: 'Montserrat', sans-serif;
+.message-board {
+  height: 75vh;
+  /* height: max-content; */
 }
 
 button {
