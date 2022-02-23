@@ -1,5 +1,5 @@
 // 💾 Application state
-var phrases = {
+const phrases = {
   happy: [
     {
       quote: "My God, a moment of bliss. Why, isn't that enough for a whole lifetime?",
@@ -132,10 +132,9 @@ var phrases = {
       author: "Nelson Mandela, Long Walk to Freedom"
     },
   ],
-}
+};
 
 // 🔎 Query selectors
-// select the node list of emojis
 const emojis = document.querySelectorAll(".emoji");
 const message = document.querySelector(".message");
 
@@ -146,7 +145,7 @@ emojis.forEach(emoji => {
 
 // FUNCTIONS ⤵
 function generateRandom(array) {
-  var index = Math.floor(Math.random() * array.length);
+  const index = Math.floor(Math.random() * array.length);
   return index;
 };
 
