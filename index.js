@@ -162,18 +162,16 @@ function displayPhrase(event) {
   
   // if (!phrase || lastMessage === newMessage) {
     if (lastMessage === newMessage) {
-    console.log("phrase 1 >", phrase);
+    // console.log("phrase 1 >", phrase);
     phrase = phrases[emojion][randomIndex - 1];
-    console.log("phrase  2>", phrase);
+    // console.log("phrase  2>", phrase);
     if (!phrase) {
-      console.log("!phrase >", !phrase);
+      // console.log("!phrase >", !phrase);
       message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
       author.textContent = "";
     }
     message.textContent = phrase.quote;
     author.textContent = `- ${phrase.author}`;
-  } else if (!phrase) {
-    console.log("!phrase > ", !phrase);
   } else {
     message.textContent = phrase.quote;
     author.textContent = `- ${phrase.author}`;
