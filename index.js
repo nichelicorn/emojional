@@ -1,6 +1,5 @@
 // 💾 Application state
 var phrases = {
-  // happy: ["You go!", "Your smile just cheered me up!", "YAY!"],
   happy: [
     {
       quote: "My God, a moment of bliss. Why, isn't that enough for a whole lifetime?",
@@ -23,7 +22,6 @@ var phrases = {
       author: "Ursula K LeGuin"
     }
   ],
-  // silly: ["Interesting response", "Sounds ... good?", "Me too."],
   silly: [
     {
       quote: "You will do foolish things, but do them with enthusiasm.",
@@ -46,7 +44,6 @@ var phrases = {
       author: "Oscar Wilde, The Picture of Dorian Gray"
     },
   ],
-  // crying: ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"],
   crying: [
     {
       quote: "They say when you are missing someone that they are probably feeling the same, but I don't think it's possible for you to miss me as much as I'm missing you right now.",
@@ -69,7 +66,6 @@ var phrases = {
       author: "Kurt Cobain"
     },
   ],
-  // wormy: ["Earthworms have red blood, just like humans.", "In the tropical areas of the world, some species of earthworms can reach up to 14 feet long.", "Earthworms have no ears or eyes. They do have one end of their body that is more sensitive to light than the other."],
   wormy: [
     {
       quote: "Well, I must endure the presence of a few caterpillars if I wish to become acquainted with the butterflies.",
@@ -92,7 +88,6 @@ var phrases = {
       author: "Lewis Carroll, Alice in Wonderland"
     },
   ],
-  // mindblown: ["Have you taken a pom?", "Do you need a friend in study hall?", "Thank goodness we have Monday off!"],
   mindblown: [
     {
       quote: "If you let people into your life a little bit, they can be pretty damn amazing.",
@@ -115,7 +110,6 @@ var phrases = {
       author: "Maya Angelou, I Know Why the Caged Bird Sings"
     },
   ],
-  // studious: ["Did you read the MDN for that?", "Has anything unexpected happened in your code?", "What did you learn today?"]
   studious: [
     {
       quote: "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.",
