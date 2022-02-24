@@ -8,20 +8,26 @@
     <title>Emojional</title>
   </head>
   <body>
-    <section>
-      <h2>It's ok, we all get emojional.</h2>
-      <p class="prompt">How are you feeling today?</p>
-      <button class="happy">😊</button>
-      <button class="silly">🤪</button>
-      <button class="crying">😭</button>
-      <button class="wormy">🐛</button>
-      <button class="mindblown">🤯</button>
-      <button class="studious">🤔</button>
-      <p class="message"></p>
+    <h1>It's ok, we all get emojional.</h1>
+    <section class="message-board">
+      <div class="prompt">
+        <p class="prompt">How are you feeling today?</p>
+        <p>Click an emoji for an emojion-based quotation.</p>
+      </div>
+      <div class="emojis">
+        <button class="emoji happy" name="happy">😊</button>
+        <button class="emoji silly" name="silly">🤪</button>
+        <button class="emoji crying" name="sad">😭</button>
+        <button class="emoji wormy" name="wormy">🐛</button>
+        <button class="emoji mindblown" name="mindblown">🤯</button>
+        <button class="emoji studious" name="studious">🤔</button>
+      </div>
+      <div class="message-display">
+        <p class="message"></p>
+        <p class="author"></p>
+      </div>
     </section>
-    <section class="fact-url">
-      <a href="https://navajocodetalkers.org/38-earthworm-facts-for-kids/">more 🐛 facts</a>
-    </section>
+    <script type="text/javascript" src="./data.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
