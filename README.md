@@ -2,7 +2,7 @@
 
 We all have emotions. Click on your feelings, and receive a message to help you through the moment.
 
-[click to get emojional!]()
+[click to get emojional!](https://nichelicorn.github.io/emojional/)
 
 ## Notes
 
