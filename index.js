@@ -160,13 +160,11 @@ function displayPhrase(event) {
   let phrase = phrases[emojion][randomIndex];
 
   if (lastMessage === newMessage) {
-    console.log("🧟‍♀️ ... duplicate message detected!!");
     phrase = phrases[emojion][randomIndex - 1];
     newMessage = phrase;
   };
 
   if (!phrase) {
-    // console.log("🧟‍♀️ ... error selecting quotation!!");
     phrase = {
       quote: "Take fifteen minutes for yourself outdoors 🌳",
       author: "",
@@ -180,6 +178,5 @@ function displayPhrase(event) {
 };
 
 function setText(element, message) {
-  // console.log("message >", message);
   element.textContent = message;
-}
+;}
