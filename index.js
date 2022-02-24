@@ -156,17 +156,12 @@ function displayPhrase(event) {
 
   const emojion = event.target.classList[1];
   const randomIndex = generateRandom(phrases[emojion]);
-
-  let phrase = phrases[emojion][randomIndex];
   const newMessage = `${emojion}${randomIndex}`;
-  
-  // if (!phrase || lastMessage === newMessage) {
+  let phrase = phrases[emojion][randomIndex];
+
     if (lastMessage === newMessage) {
-    // console.log("phrase 1 >", phrase);
     phrase = phrases[emojion][randomIndex - 1];
-    // console.log("phrase  2>", phrase);
     if (!phrase) {
-      // console.log("!phrase >", !phrase);
       message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
       author.textContent = "";
     }
@@ -179,3 +174,7 @@ function displayPhrase(event) {
 
   lastMessage = newMessage;
 };
+
+function setText(element, message) {
+  element.textContent = message;
+}
