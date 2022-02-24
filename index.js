@@ -156,25 +156,30 @@ function displayPhrase(event) {
 
   const emojion = event.target.classList[1];
   const randomIndex = generateRandom(phrases[emojion]);
-  const newMessage = `${emojion}${randomIndex}`;
+  let newMessage = `${emojion}${randomIndex}`;
   let phrase = phrases[emojion][randomIndex];
 
-    if (lastMessage === newMessage) {
+  if (lastMessage === newMessage) {
+    console.log("🧟‍♀️ ... duplicate message detected!!");
     phrase = phrases[emojion][randomIndex - 1];
-    if (!phrase) {
-      message.textContent = "Take fifteen minutes for yourself outdoors 🌳";
-      author.textContent = "";
-    }
-    message.textContent = phrase.quote;
-    author.textContent = `- ${phrase.author}`;
-  } else {
-    message.textContent = phrase.quote;
-    author.textContent = `- ${phrase.author}`;
+    newMessage = phrase;
   };
+
+  if (!phrase) {
+    // console.log("🧟‍♀️ ... error selecting quotation!!");
+    phrase = {
+      quote: "Take fifteen minutes for yourself outdoors 🌳",
+      author: "",
+    }
+  };
+
+  setText(message, `${phrase.quote}`);
+  setText(author, `- ${phrase.author}`);
 
   lastMessage = newMessage;
 };
 
 function setText(element, message) {
+  // console.log("message >", message);
   element.textContent = message;
 }
